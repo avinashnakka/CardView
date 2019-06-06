@@ -12,9 +12,13 @@
 		E1B29DAF228ACA91009BBDFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B29DAD228ACA91009BBDFB /* Main.storyboard */; };
 		E1B29DB1228ACA93009BBDFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B29DB0228ACA93009BBDFB /* Assets.xcassets */; };
 		E1B29DB4228ACA93009BBDFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B29DB2228ACA93009BBDFB /* LaunchScreen.storyboard */; };
+		F7791B741C7B9B0476ABE2E8 /* Pods_CardView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46A9F244A097E4B6611CA1A /* Pods_CardView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2303C4E3B0EE3194E7121AA7 /* Pods-CardView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardView.release.xcconfig"; path = "Target Support Files/Pods-CardView/Pods-CardView.release.xcconfig"; sourceTree = "<group>"; };
+		96C210026C3CA422F67FD931 /* Pods-CardView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardView.debug.xcconfig"; path = "Target Support Files/Pods-CardView/Pods-CardView.debug.xcconfig"; sourceTree = "<group>"; };
+		A46A9F244A097E4B6611CA1A /* Pods_CardView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B29DA6228ACA91009BBDFB /* CardView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B29DA9228ACA91009BBDFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1B29DAB228ACA91009BBDFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7791B741C7B9B0476ABE2E8 /* Pods_CardView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13EEA8A10DC7B937627A09A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A46A9F244A097E4B6611CA1A /* Pods_CardView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E6385E54B41E8BCB02FE271 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96C210026C3CA422F67FD931 /* Pods-CardView.debug.xcconfig */,
+				2303C4E3B0EE3194E7121AA7 /* Pods-CardView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E1B29D9D228ACA91009BBDFB = {
 			isa = PBXGroup;
 			children = (
 				E1B29DA8228ACA91009BBDFB /* CardView */,
 				E1B29DA7228ACA91009BBDFB /* Products */,
+				8E6385E54B41E8BCB02FE271 /* Pods */,
+				13EEA8A10DC7B937627A09A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1B29DB8228ACA93009BBDFB /* Build configuration list for PBXNativeTarget "CardView" */;
 			buildPhases = (
+				91DC55A7C1E818044F5549DD /* [CP] Check Pods Manifest.lock */,
 				E1B29DA2228ACA91009BBDFB /* Sources */,
 				E1B29DA3228ACA91009BBDFB /* Frameworks */,
 				E1B29DA4228ACA91009BBDFB /* Resources */,
@@ -129,6 +155,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91DC55A7C1E818044F5549DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CardView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1B29DA2228ACA91009BBDFB /* Sources */ = {
@@ -280,6 +331,7 @@
 		};
 		E1B29DB9228ACA93009BBDFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C210026C3CA422F67FD931 /* Pods-CardView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +351,7 @@
 		};
 		E1B29DBA228ACA93009BBDFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2303C4E3B0EE3194E7121AA7 /* Pods-CardView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
