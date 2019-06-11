@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Yu3-sX-MFJ" userLabel="background">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="itG-A0-fob">
-                                <rect key="frame" x="126.66666666666669" y="74" width="122" height="67"/>
+                                <rect key="frame" x="99" y="50" width="122" height="67"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="H4V-HT-IoV">
-                                <rect key="frame" x="60" y="241" width="255" height="170"/>
+                                <rect key="frame" x="32.5" y="217" width="255" height="170"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card10" translatesAutoresizingMaskIntoConstraints="NO" id="9GQ-XO-WXd" userLabel="leftImage">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
@@ -36,23 +36,23 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZK-gc-q4Q">
-                                <rect key="frame" x="146.66666666666666" y="471" width="81.666666666666657" height="31"/>
+                                <rect key="frame" x="119" y="447" width="82" height="31"/>
                                 <state key="normal" image="dealbutton"/>
                                 <connections>
                                     <action selector="dealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PJg-76-EeD"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0pw-vz-Wj3" userLabel="CPU">
-                                <rect key="frame" x="30.000000000000004" y="688" width="50.333333333333343" height="60"/>
+                                <rect key="frame" x="30" y="390" width="50.5" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="was-zq-z1a" userLabel="NameCPU">
-                                        <rect key="frame" x="0.0" y="0.0" width="50.333333333333336" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="50.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UH0-Sb-itj" userLabel="ScoreCPU">
-                                        <rect key="frame" x="0.0" y="30" width="50.333333333333336" height="30"/>
+                                        <rect key="frame" x="0.0" y="30" width="50.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -60,16 +60,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0jU-Np-VDH" userLabel="Player">
-                                <rect key="frame" x="261" y="689.33333333333337" width="84" height="58.666666666666629"/>
+                                <rect key="frame" x="206" y="391" width="84" height="59"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbg-qh-lRR" userLabel="NamePlayer">
-                                        <rect key="frame" x="0.0" y="0.0" width="84" height="28.666666666666668"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAE-SX-jbL" userLabel="ScorePlayer">
-                                        <rect key="frame" x="0.0" y="28.666666666666629" width="84" height="30"/>
+                                        <rect key="frame" x="0.0" y="29" width="84" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -77,7 +77,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UuB-sd-jaX">
-                                <rect key="frame" x="141.66666666666666" y="542" width="92" height="43"/>
+                                <rect key="frame" x="114" y="518" width="92" height="43"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <state key="normal" title="FINISH">
                                     <color key="titleColor" red="0.66666668650000005" green="0.33895331154746422" blue="0.00090859333281898458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,13 +87,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgM-4b-NDa">
-                                <rect key="frame" x="187.66666666666666" y="160" width="0.0" height="0.0"/>
+                                <rect key="frame" x="160" y="160" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rP-cN-53X">
-                                <rect key="frame" x="134.66666666666666" y="625" width="106" height="34"/>
+                                <rect key="frame" x="107" y="601" width="106" height="34"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <state key="normal" title="NEW GAME">
                                     <color key="titleColor" red="1" green="0.3867471911" blue="0.1083770461" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -138,14 +138,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2383" y="-657"/>
+            <point key="canvasLocation" x="-2580" y="-670"/>
         </scene>
     </scenes>
     <resources>
         <image name="Background" width="414" height="896"/>
         <image name="card10" width="120" height="170"/>
         <image name="card11" width="120" height="170"/>
-        <image name="dealbutton" width="81.666664123535156" height="31"/>
+        <image name="dealbutton" width="82" height="31"/>
         <image name="logo" width="122" height="67"/>
     </resources>
 </document>

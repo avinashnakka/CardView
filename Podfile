@@ -7,4 +7,6 @@ target 'CardView' do
 
   # Pods for CardView
 
+Pod 'Gemini'
+
 end
